@@ -1,15 +1,22 @@
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-600.woff2);
+  font-weight: 600;
   font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
-  /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular')
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-700.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 body {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .App {
@@ -52,6 +59,12 @@ body {
   }
 }
 
+.nameShop {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
 .main-content {
   margin: 2% 10%;
 }
@@ -83,7 +96,7 @@ body {
   transform: translate(-50%, 0);
 }
 
-.card-color {
+.card-rate {
   position: absolute;
   margin-top: 40px;
   left: 50%;
@@ -106,34 +119,10 @@ body {
   color: #FFA542;
 }
 
-.card-add-cart,
-.list-add-cart {
-  color: red;
-  border: 1px solid red;
+.card-add-cart {
+  color: rgb(10, 10, 10);
   text-align: center;
-  font-size: 9px;
-  font-weight: 700;
   width: 77px;
-}
-
-.list-add-cart {
-  height: 30px;
-  align-self: center;
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.list-img {
-  width: 70px;
-}
-
-.list-price {
-  color: red;
 }
 
 button {
